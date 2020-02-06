@@ -20,25 +20,28 @@ temp_data<- data.frame(city, temp)
 # Use the [ operator to access the temperature of Paris and San Juan.
                           
 # Use the : operator to create a sequence of numbers  12,13,14,.....73
-                        
+nums <- c(12:73)                        
                           
 # Create a vector containing all the positive odd numbers smaller than 100.
+nums_odd <- seq(1, by = 2, len = 100)
                           
 # Create a vector of numbers that starts at 6, does not pass 55, and adds numbers in increments of 4/7: 6, 6 + 4/7, 6 + 8/7, and so on. How many numbers does the list have? Hint: use seq and length.
-                          
+nums_add <- seq(6, by = 4/7, len = 55)
+length(nums_add)
+                       
 # What is the class of the following object a <- seq(1, 10, 0.5)?
-                            
+class(a <- seq(1, 10, 0.5)) #numeric                         
 #What is the class of the following object a <- seq(1, 10)?
-                            
+class(a <- seq(1, 10))   #interger                         
 # The class of class(a<-1) is numeric, not integer. R defaults to numeric and to force an integer, you need to add the letter L. Confirm that the class of 1L is integer.
-                          
+class(a<-1) #numeric
+class(a<-1L) #integer
 # Define the following vector:x <- c("1", "3", "5") and coerce it to get integers.
-
-
+x <- c("1", "3", "5")
+x <- as.numeric(x)
 
 #  In the data frame you made in the second problem convert the temperature from Fahrenheit to Celsius. The conversion is  
 #C=5/9×( F −32)
-
 
 
 
