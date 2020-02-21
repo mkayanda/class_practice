@@ -18,7 +18,7 @@ temp_data<- data.frame(city, temp)
 # Use the [ and : operators to access the temperature of the first three cities on the list.
 first_three_cities <- temp_data[1:3,]
 # Use the [ operator to access the temperature of Paris and San Juan.
-paris_sanjuan <- temp_data[c(3,),c(5,)]                          
+paris_sanjuan <- temp_data[c(3,5),]                          
 # Use the : operator to create a sequence of numbers  12,13,14,.....73
 nums <- c(12:73)                        
                           
